@@ -20,7 +20,7 @@ public class SignUpController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		//Bu sayfaya direk url yazarak gelmek isteyenlere karşı 404 sayfasına yönlendiriyoruz.
-		req.getRequestDispatcher("view/404Page.jsp").forward(req, resp);
+		req.getRequestDispatcher("WEB-INF/view/404Page.jsp").forward(req, resp);
 	}
 	
 	@Override
@@ -43,7 +43,7 @@ public class SignUpController extends HttpServlet {
 		session.setAttribute("userInformation", user);
 		response.sendRedirect("taskController");
 		}else {
-			response.sendRedirect("view/MainForm.jsp");
+			response.sendRedirect("mainController");
 		}
 	}
 }

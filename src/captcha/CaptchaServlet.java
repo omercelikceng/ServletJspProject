@@ -16,7 +16,8 @@ import nl.captcha.servlet.StickyCaptchaServlet;
 
 @WebServlet("/simpleCaptcha.jpg")
 public class CaptchaServlet extends StickyCaptchaServlet {
-	
+	//Bunu bir img'in src'sine url'i yazıyoruz. Ve istek geldiğinde
+	//bir captcha(resim) dönüyor.
 	private static final long serialVersionUID = 1L;
 
 	@Override

@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//src/captcha/CaptchaServlet.java=UTF-8
+encoding//src/controller/SignInController.java=UTF-8
+encoding//src/controller/SignUpController.java=UTF-8
+encoding//src/controller/StringDecodeAndEncode.java=UTF-8
+encoding//src/controller/TaskController.java=UTF-8
+encoding//src/filter/SessionFilter.java=UTF-8

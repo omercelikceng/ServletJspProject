@@ -15,8 +15,7 @@ public class UserDAOImpl implements IUserDAO {
 	private static final String INSERT_USER = "insert into user(name,surname,email,password,admin) values (?,?,?,?,?)";
 	private static final String ALL_USERS = "select * from user";
 	private static final String DELETE_USER = "delete from user where id=?";
-	private static final String UPDATE_USER = "update user set name = ? , "
-			+ "surname = ? ,email = ? , password = ? where id = ?";
+	private static final String UPDATE_USER = "update user set name = ? , surname = ? ,email = ? , password = ? where id = ?";
 
 
 	private DataSource getDataSource() {

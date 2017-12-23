@@ -12,8 +12,7 @@ import model.Task;
 
 public class TaskDAOImpl implements ITaskDAO {
 
-	// private static final String SELECT_TASK = "select * from task where userid=
-	// ?";
+	// private static final String SELECT_TASK = "select * from task where userid= ?";
 	private static final String INSERT_TASK = "insert into task(useremail,taskdate,taskname,taskdescription) values (?,?,?,?)";
 	private static final String ALL_TASKS = "select * from task where useremail=?";
 	private static final String DELETE_TASK = "delete from task where id=?";

@@ -44,7 +44,7 @@ public class TaskController extends HttpServlet {
 		}
 		req.setAttribute("taskLists", taskList);
 		
-		RequestDispatcher dispatcher = req.getRequestDispatcher("view/UserOperation.jsp");
+		RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/view/TaskForm.jsp");
 		dispatcher.forward(req, resp);
 	}
 	
@@ -79,7 +79,7 @@ public class TaskController extends HttpServlet {
 		taskList = taskDao.getTasks(user.geteMail());
 		req.setAttribute("taskLists", taskList);
 		
-		Result result = new Result(200, "Başarılı"); 
+		Result result = new Result(200, "Basarili"); 
 		String jsonResult = gson.toJson(result);
 		PrintWriter pw = resp.getWriter();
 		pw.write(jsonResult);
